@@ -1,5 +1,6 @@
 # Simple web server benchmark comparison
 
+
 > Don't forget to hit the star if it's interesting! ⭐
 
 - Go
@@ -9,6 +10,8 @@
 - PHP (Development Server)
 
 Results for `MacBook Air M1 8 GB` https://stan-kondrat.github.io/simple-web-server-benchmark-comparison/
+
+![Simple web server benchmark comparison](docs/simple-bench.jpg)
 
 
 ## How to run local
