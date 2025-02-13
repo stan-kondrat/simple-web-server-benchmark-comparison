@@ -1,0 +1,25 @@
+system_data = 
+{
+    "cpu_info": {
+        "cpu_count": 8,
+        "cpu_frequency": 3204,
+        "cpu_usage": 38.5
+    },
+    "memory_info": {
+        "total_memory_gb": 8.0,
+        "available_memory_gb": 3.184814453125,
+        "used_memory_gb": 3.9554290771484375,
+        "memory_usage_percent": 60.2
+    },
+    "os_info": {
+        "os": "Darwin",
+        "os_version": "Darwin Kernel Version 24.2.0: Fri Dec  6 18:40:14 PST 2024; root:xnu-11215.61.5~2/RELEASE_ARM64_T8103",
+        "architecture": [
+            "64bit",
+            "Mach-O"
+        ],
+        "machine": "arm64",
+        "processor": "arm"
+    },
+    "name": "Darwin 64bit 8.00GB 8 CPUs arm"
+}
