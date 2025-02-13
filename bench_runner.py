@@ -48,15 +48,12 @@ def main(out=None, pid=None):
     # URL for the test (can be changed)
     url = "http://127.0.0.1:8080/"
     
-    # Test parameters: Min, Max concurrency and the step increment for concurrency
-    min_concurrency = 1
-    max_concurrency = 20
-    step = 1
+    steps = (5, 10, 15, 20, 35, 30, 35, 40, 50, 60, 70, 80, 90, 100)
     
     # Loop to increase concurrency step by step
-    for concurrency in range(min_concurrency, max_concurrency + 1, step):
+    for concurrency in steps:
         print(f"Running test with {concurrency} concurrent requests...")
-        
+
         total_requests = concurrency * 1000
 
         # Start the ab test

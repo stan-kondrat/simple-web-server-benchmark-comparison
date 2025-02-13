@@ -5,20 +5,24 @@ if (typeof system_data == 'object') {
 
 let data = {};
 
-if (typeof bun_data == 'object') {
-    data['bun'] = bun_data
+
+if (typeof rust_data == 'object') {
+    data['c_libuv'] = c_libuv_data
+}
+if (typeof rust_data == 'object') {
+    data['rust'] = rust_data
 }
 if (typeof go_data == 'object') {
     data['go'] = go_data
+}
+if (typeof bun_data == 'object') {
+    data['bun'] = bun_data
 }
 if (typeof node_data == 'object') {
     data['node'] = node_data
 }
 if (typeof php_data == 'object') {
     data['php'] = php_data
-}
-if (typeof rust_data == 'object') {
-    data['rust'] = rust_data
 }
 
 console.log(system_data)

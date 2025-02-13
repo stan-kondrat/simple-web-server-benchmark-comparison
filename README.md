@@ -1,24 +1,25 @@
-# Simple web server benchmark comparison
+# A simple comparison of web server performance
 
 
 > Don't forget to hit the star if it's interesting! ⭐
 
-- Go
+- C (libuv)
 - Rust (Hyper)
+- Go
 - Bun
 - Node
 - PHP (Development Server)
 
 Results for `MacBook Air M1 8 GB` https://stan-kondrat.github.io/simple-web-server-benchmark-comparison/
 
-![Simple web server benchmark comparison](docs/simple-bench.jpg)
+![A simple comparison of web server performance - preview](docs/simple-bench-preview.png)
 
 
 ## How to run local
 
 ```sh
 # Install dependencies (macOS)
-brew install make go rust bun node php
+brew install make go rust libuv bun node php
 
 # Prepare virtual env
 source myenv/bin/activate
@@ -49,11 +50,13 @@ htop --pid <PID>
 make clean # clean all
 make clean-go
 make clean-rust
+make clean-c_libuv
 make clean-results
 
 make build # build all
 make build-go
 make build-rust
+make build-c_libuv
 
 make run # run all
 make run-bun
@@ -61,6 +64,7 @@ make run-go
 make run-node
 make run-php
 make run-rust
+make run-c_libuv
 ```
 
 ## Why  

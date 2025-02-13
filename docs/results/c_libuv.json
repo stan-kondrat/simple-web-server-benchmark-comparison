@@ -1,0 +1,100 @@
+c_libuv_data = [
+    {
+        "total_requests": 5000,
+        "avg_cpu_percent": 5.1,
+        "avg_memory_used_mb": 1.828125,
+        "rps": 33262.37,
+        "latency_median_ms": "0.1"
+    },
+    {
+        "total_requests": 10000,
+        "avg_cpu_percent": 10.7,
+        "avg_memory_used_mb": 1.859375,
+        "rps": 38978.0,
+        "latency_median_ms": "0.2"
+    },
+    {
+        "total_requests": 15000,
+        "avg_cpu_percent": 14.7,
+        "avg_memory_used_mb": 1.859375,
+        "rps": 42581.7,
+        "latency_median_ms": "0.3"
+    },
+    {
+        "total_requests": 20000,
+        "avg_cpu_percent": 18.9,
+        "avg_memory_used_mb": 1.875,
+        "rps": 43574.12,
+        "latency_median_ms": "0.5"
+    },
+    {
+        "total_requests": 35000,
+        "avg_cpu_percent": 31.7,
+        "avg_memory_used_mb": 1.921875,
+        "rps": 44752.11,
+        "latency_median_ms": "0.7"
+    },
+    {
+        "total_requests": 30000,
+        "avg_cpu_percent": 27.5,
+        "avg_memory_used_mb": 1.921875,
+        "rps": 45308.05,
+        "latency_median_ms": "0.3"
+    },
+    {
+        "total_requests": 35000,
+        "avg_cpu_percent": 31.9,
+        "avg_memory_used_mb": 1.9375,
+        "rps": 45262.09,
+        "latency_median_ms": "0.3"
+    },
+    {
+        "total_requests": 40000,
+        "avg_cpu_percent": 35.9,
+        "avg_memory_used_mb": 1.9375,
+        "rps": 45329.84,
+        "latency_median_ms": "0.4"
+    },
+    {
+        "total_requests": 50000,
+        "avg_cpu_percent": 40.1,
+        "avg_memory_used_mb": 1.9375,
+        "rps": 44993.04,
+        "latency_median_ms": "0.9"
+    },
+    {
+        "total_requests": 60000,
+        "avg_cpu_percent": 40.0,
+        "avg_memory_used_mb": 1.953125,
+        "rps": 41736.08,
+        "latency_median_ms": "3.8"
+    },
+    {
+        "total_requests": 70000,
+        "avg_cpu_percent": 38.0,
+        "avg_memory_used_mb": 2.0,
+        "rps": 40781.2,
+        "latency_median_ms": "4.2"
+    },
+    {
+        "total_requests": 80000,
+        "avg_cpu_percent": 36.6,
+        "avg_memory_used_mb": 2.046875,
+        "rps": 40380.55,
+        "latency_median_ms": "4.6"
+    },
+    {
+        "total_requests": 90000,
+        "avg_cpu_percent": 22.0,
+        "avg_memory_used_mb": 2.046875,
+        "rps": 40061.82,
+        "latency_median_ms": "5.3"
+    },
+    {
+        "total_requests": 100000,
+        "avg_cpu_percent": 26.75,
+        "avg_memory_used_mb": 2.046875,
+        "rps": 40142.18,
+        "latency_median_ms": "5.2"
+    }
+]

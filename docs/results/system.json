@@ -3,13 +3,13 @@ system_data =
     "cpu_info": {
         "cpu_count": 8,
         "cpu_frequency": 3204,
-        "cpu_usage": 38.5
+        "cpu_usage": 2.6
     },
     "memory_info": {
         "total_memory_gb": 8.0,
-        "available_memory_gb": 3.184814453125,
-        "used_memory_gb": 3.9554290771484375,
-        "memory_usage_percent": 60.2
+        "available_memory_gb": 3.1781005859375,
+        "used_memory_gb": 3.9559326171875,
+        "memory_usage_percent": 60.3
     },
     "os_info": {
         "os": "Darwin",
