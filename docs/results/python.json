@@ -1,0 +1,121 @@
+python_data = [
+    {
+        "total_requests": 1000,
+        "avg_cpu_percent": 81.2,
+        "avg_memory_used_mb": 144.140625,
+        "rps": 2055.74,
+        "latency_median_ms": "0.1"
+    },
+    {
+        "total_requests": 2000,
+        "avg_cpu_percent": 187.5,
+        "avg_memory_used_mb": 145.25,
+        "rps": 4096.98,
+        "latency_median_ms": "0.2"
+    },
+    {
+        "total_requests": 3000,
+        "avg_cpu_percent": 220.2,
+        "avg_memory_used_mb": 146.046875,
+        "rps": 6383.24,
+        "latency_median_ms": "0.0"
+    },
+    {
+        "total_requests": 5000,
+        "avg_cpu_percent": 189.0,
+        "avg_memory_used_mb": 146.65625,
+        "rps": 7024.0,
+        "latency_median_ms": "0.5"
+    },
+    {
+        "total_requests": 10000,
+        "avg_cpu_percent": 261.8,
+        "avg_memory_used_mb": 146.84895833333334,
+        "rps": 6933.92,
+        "latency_median_ms": "0.6"
+    },
+    {
+        "total_requests": 15000,
+        "avg_cpu_percent": 286.35,
+        "avg_memory_used_mb": 146.91796875,
+        "rps": 7069.12,
+        "latency_median_ms": "0.7"
+    },
+    {
+        "total_requests": 20000,
+        "avg_cpu_percent": 263.40000000000003,
+        "avg_memory_used_mb": 146.95572916666666,
+        "rps": 7041.04,
+        "latency_median_ms": "0.8"
+    },
+    {
+        "total_requests": 35000,
+        "avg_cpu_percent": 275.26,
+        "avg_memory_used_mb": 147.140625,
+        "rps": 7065.66,
+        "latency_median_ms": "1.1"
+    },
+    {
+        "total_requests": 30000,
+        "avg_cpu_percent": 323.3375,
+        "avg_memory_used_mb": 148.578125,
+        "rps": 7703.13,
+        "latency_median_ms": "1.1"
+    },
+    {
+        "total_requests": 35000,
+        "avg_cpu_percent": 356.17777777777775,
+        "avg_memory_used_mb": 148.76388888888889,
+        "rps": 7861.51,
+        "latency_median_ms": "1.3"
+    },
+    {
+        "total_requests": 40000,
+        "avg_cpu_percent": 373.16,
+        "avg_memory_used_mb": 148.765625,
+        "rps": 7707.04,
+        "latency_median_ms": "1.6"
+    },
+    {
+        "total_requests": 50000,
+        "avg_cpu_percent": 368.37692307692305,
+        "avg_memory_used_mb": 149.0252403846154,
+        "rps": 7599.46,
+        "latency_median_ms": "1.6"
+    },
+    {
+        "total_requests": 60000,
+        "avg_cpu_percent": 363.175,
+        "avg_memory_used_mb": 149.140625,
+        "rps": 7435.02,
+        "latency_median_ms": "1.8"
+    },
+    {
+        "total_requests": 70000,
+        "avg_cpu_percent": 358.93684210526317,
+        "avg_memory_used_mb": 149.140625,
+        "rps": 7335.63,
+        "latency_median_ms": "1.8"
+    },
+    {
+        "total_requests": 80000,
+        "avg_cpu_percent": 358.64090909090913,
+        "avg_memory_used_mb": 149.140625,
+        "rps": 7276.94,
+        "latency_median_ms": "1.7"
+    },
+    {
+        "total_requests": 90000,
+        "avg_cpu_percent": 359.98400000000004,
+        "avg_memory_used_mb": 149.140625,
+        "rps": 7192.95,
+        "latency_median_ms": "1.8"
+    },
+    {
+        "total_requests": 100000,
+        "avg_cpu_percent": 359.32142857142856,
+        "avg_memory_used_mb": 149.140625,
+        "rps": 7140.74,
+        "latency_median_ms": "1.9"
+    }
+]

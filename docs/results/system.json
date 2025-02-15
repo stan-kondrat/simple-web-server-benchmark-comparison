@@ -7,9 +7,9 @@ system_data =
     },
     "memory_info": {
         "total_memory_gb": 8.0,
-        "available_memory_gb": 3.1781005859375,
-        "used_memory_gb": 3.9559326171875,
-        "memory_usage_percent": 60.3
+        "available_memory_gb": 2.0579986572265625,
+        "used_memory_gb": 3.245025634765625,
+        "memory_usage_percent": 74.3
     },
     "os_info": {
         "os": "Darwin",

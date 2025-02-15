@@ -6,10 +6,13 @@ all: clean build run
 
 # Clean
 
-clean: clean-go clean-rust clean-c_libuv clean-results
+clean: clean-go clean-python clean-rust clean-c_libuv clean-results
 
 clean-go:
 	rm -f go/main
+
+clean-python:
+	rm -rf python/.venv python/__pycache__
 
 clean-rust:
 	rm -rf rust/target
@@ -23,12 +26,17 @@ clean-results:
 
 # Build
 
-build: build-go build-rust build-c_libuv
+build: build-go build-python build-rust build-c_libuv
 
 # Build - go
 go/main: go/main.go
 	cd go && go build
 build-go: go/main
+
+# Build - python
+python/.venv/bin/gunicorn:
+	cd python && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+build-python: python/.venv/bin/gunicorn
 
 # Build - rust
 rust/target/release/main: rust/src/main.rs
@@ -42,7 +50,7 @@ build-c_libuv: c_libuv/main
 
 # Run
 
-run: run-bun run-go run-node run-php run-rust run-c_libuv system-info
+run: run-bun run-go run-node run-php run-python run-rust run-c_libuv system-info
 
 docs/results:
 	mkdir -p docs/results
@@ -66,9 +74,11 @@ run-node: docs/results system-info
 run-php: docs/results system-info
 	./bench_runner.sh "php" "php -S 127.0.0.1:8080 ./php/main.php 2>/dev/null"
 
+run-python: python/.venv/bin/gunicorn docs/results system-info
+	./bench_runner.sh "python" "source python/.venv/bin/activate" "gunicorn --chdir python -w 4 -b 127.0.0.1:8080 main:app"
+
 run-rust: rust/target/release/main docs/results system-info
 	./bench_runner.sh "rust" "./rust/target/release/main"
 
 run-c_libuv: c_libuv/main docs/results system-info
 	./bench_runner.sh "c_libuv" "./c_libuv/main"
-	

@@ -24,6 +24,9 @@ if (typeof node_data == 'object') {
 if (typeof php_data == 'object') {
     data['php'] = php_data
 }
+if (typeof python_data == 'object') {
+    data['python'] = python_data
+}
 
 console.log(system_data)
 console.log(data)

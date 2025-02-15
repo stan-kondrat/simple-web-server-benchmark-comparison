@@ -9,6 +9,7 @@
 - Bun
 - Node
 - PHP (Development Server)
+- Python (flask, gunicorn)
 
 Results for `MacBook Air M1 8 GB` https://stan-kondrat.github.io/simple-web-server-benchmark-comparison/
 
@@ -49,12 +50,14 @@ htop --pid <PID>
 
 make clean # clean all
 make clean-go
+make clean-python
 make clean-rust
 make clean-c_libuv
 make clean-results
 
 make build # build all
 make build-go
+make build-python
 make build-rust
 make build-c_libuv
 
@@ -63,6 +66,7 @@ make run-bun
 make run-go
 make run-node
 make run-php
+make run-python
 make run-rust
 make run-c_libuv
 ```
