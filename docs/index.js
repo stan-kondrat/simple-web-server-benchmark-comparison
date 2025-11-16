@@ -15,6 +15,9 @@ if (typeof rust_data == 'object') {
 if (typeof go_data == 'object') {
     data['go'] = go_data
 }
+if (typeof zig_data == 'object') {
+    data['zig'] = zig_data
+}
 if (typeof bun_data == 'object') {
     data['bun'] = bun_data
 }

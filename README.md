@@ -6,6 +6,7 @@
 - C (libuv)
 - Rust (Hyper)
 - Go
+- Zig
 - Bun
 - Node
 - PHP (Development Server)
@@ -20,7 +21,7 @@ Results for `MacBook Air M1 8 GB` https://stan-kondrat.github.io/simple-web-serv
 
 ```sh
 # Install dependencies (macOS)
-brew install make go rust libuv bun node php
+brew install make go rust libuv bun node php zig
 
 # Prepare virtual env
 source myenv/bin/activate
@@ -53,6 +54,7 @@ make clean-go
 make clean-python
 make clean-rust
 make clean-c_libuv
+make clean-zig
 make clean-results
 
 make build # build all
@@ -60,6 +62,7 @@ make build-go
 make build-python
 make build-rust
 make build-c_libuv
+make build-zig
 
 make run # run all
 make run-bun
@@ -69,6 +72,7 @@ make run-php
 make run-python
 make run-rust
 make run-c_libuv
+make run-zig
 ```
 
 ## Why  

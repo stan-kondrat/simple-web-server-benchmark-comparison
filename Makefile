@@ -6,7 +6,7 @@ all: clean build run
 
 # Clean
 
-clean: clean-go clean-python clean-rust clean-c_libuv clean-results
+clean: clean-go clean-python clean-rust clean-c_libuv clean-zig clean-results
 
 clean-go:
 	rm -f go/main
@@ -20,13 +20,16 @@ clean-rust:
 clean-c_libuv:
 	rm -f rust/main
 
+clean-zig:
+	rm -rf zig/zig-cache zig/zig-out
+
 clean-results:
 	rm -rf docs/results
 
 
 # Build
 
-build: build-go build-python build-rust build-c_libuv
+build: build-go build-python build-rust build-c_libuv build-zig
 
 # Build - go
 go/main: go/main.go
@@ -48,9 +51,14 @@ c_libuv/main: c_libuv/main.c
 	gcc -o c_libuv/main c_libuv/main.c -I/opt/homebrew/include -L/opt/homebrew/lib -luv && chmod +x c_libuv/main.c
 build-c_libuv: c_libuv/main
 
+# Build - zig
+zig/zig-out/bin/main: zig/main.zig
+	cd zig && mkdir -p zig-out/bin && zig build-exe main.zig -O ReleaseFast -femit-bin=zig-out/bin/main
+build-zig: zig/zig-out/bin/main
+
 # Run
 
-run: run-bun run-go run-node run-php run-python run-rust run-c_libuv system-info
+run: run-bun run-go run-node run-php run-python run-rust run-c_libuv run-zig system-info
 
 docs/results:
 	mkdir -p docs/results
@@ -82,3 +90,6 @@ run-rust: rust/target/release/main docs/results system-info
 
 run-c_libuv: c_libuv/main docs/results system-info
 	./bench_runner.sh "c_libuv" "./c_libuv/main"
+
+run-zig: zig/zig-out/bin/main docs/results system-info
+	./bench_runner.sh "zig" "./zig/zig-out/bin/main"
